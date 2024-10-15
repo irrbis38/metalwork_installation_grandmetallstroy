@@ -1,0 +1,155 @@
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v32-cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v32-cyrillic-regular.ttf") format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v32-cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v32-cyrillic-500.ttf") format("truetype");
+}
+body {
+  margin: 0;
+}
+
+.n-container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1580px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+@media (max-width: 767px) {
+  .n-container {
+    padding: 0 14px;
+  }
+}
+
+.block_metalwork_installation_art6 {
+  min-width: 320px;
+  padding: 143px 0 194px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #000;
+  background-color: #fff;
+}
+.block_metalwork_installation_art6, .block_metalwork_installation_art6 *, .block_metalwork_installation_art6 *::before, .block_metalwork_installation_art6 *::after {
+  box-sizing: border-box;
+}
+@media (max-width: 1200px) {
+  .block_metalwork_installation_art6 {
+    padding: 80px 0 100px;
+  }
+}
+@media (max-width: 767px) {
+  .block_metalwork_installation_art6 {
+    padding: 49px 0 68px;
+  }
+}
+
+.block_metalwork_installation_art6__title {
+  margin: 0 0 38px 0;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.block_metalwork_installation_art6__title strong {
+  white-space: nowrap;
+  color: #0045a3;
+}
+@media (max-width: 1200px) {
+  .block_metalwork_installation_art6__title {
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .block_metalwork_installation_art6__title {
+    margin-bottom: 28px;
+    font-size: 24px;
+  }
+}
+
+.block_metalwork_installation_art6__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px 20px;
+  list-style: none;
+}
+@media (max-width: 1200px) {
+  .block_metalwork_installation_art6__list {
+    grid-template-columns: 1fr;
+    gap: 20px 0;
+  }
+}
+@media (max-width: 767px) {
+  .block_metalwork_installation_art6__list {
+    gap: 10px 0;
+  }
+}
+
+.block_metalwork_installation_art6__item {
+  display: flex;
+  align-items: center;
+  gap: 0 46px;
+  padding: 46px 50px 38px 55px;
+  border: 3px solid #0045a3;
+  border-radius: 3px;
+}
+.block_metalwork_installation_art6__item:nth-child(2) strong {
+  display: inline-block;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .block_metalwork_installation_art6__item {
+    gap: 0 28px;
+    min-height: 98px;
+    padding: 15px 18px 17px 26px;
+  }
+  .block_metalwork_installation_art6__item:nth-child(1) strong {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.block_metalwork_installation_art6__icon {
+  flex: 0 0 82px;
+  width: 82px;
+  height: 82px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 767px) {
+  .block_metalwork_installation_art6__icon {
+    flex: 0 0 50px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.block_metalwork_installation_art6__descr {
+  flex: 1 1 auto;
+  margin: 0;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 25px;
+}
+.block_metalwork_installation_art6__descr strong {
+  color: #0045a3;
+}
+@media (max-width: 767px) {
+  .block_metalwork_installation_art6__descr {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}

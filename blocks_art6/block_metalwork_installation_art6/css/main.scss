@@ -1,0 +1,193 @@
+@mixin xl {
+  @media (max-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin xxs {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v32-cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v32-cyrillic-regular.ttf") format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v32-cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v32-cyrillic-500.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+}
+
+.n-container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1580px;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  @include xs {
+    padding: 0 14px;
+  }
+}
+
+.block_metalwork_installation_art6 {
+  min-width: 320px;
+  padding: 143px 0 194px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #000;
+  background-color: #fff;
+
+  &,
+  & *,
+  & *::before,
+  & *::after {
+    box-sizing: border-box;
+  }
+
+  @include md {
+    padding: 80px 0 100px;
+  }
+
+  @include xs {
+    padding: 49px 0 68px;
+  }
+}
+
+.block_metalwork_installation_art6__title {
+  margin: 0 0 38px 0;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+
+  strong {
+    white-space: nowrap;
+    color: #0045a3;
+  }
+
+  @include md {
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+
+  @include xs {
+    margin-bottom: 28px;
+    font-size: 24px;
+  }
+}
+
+.block_metalwork_installation_art6__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px 20px;
+  list-style: none;
+
+  @include md {
+    grid-template-columns: 1fr;
+    gap: 20px 0;
+  }
+
+  @include xs {
+    gap: 10px 0;
+  }
+}
+
+.block_metalwork_installation_art6__item {
+  display: flex;
+  align-items: center;
+  gap: 0 46px;
+  padding: 46px 50px 38px 55px;
+  border: 3px solid #0045a3;
+  border-radius: 3px;
+
+  &:nth-child(2) {
+    strong {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+
+  @include xs {
+    gap: 0 28px;
+    min-height: 98px;
+    padding: 15px 18px 17px 26px;
+
+    &:nth-child(1) {
+      strong {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.block_metalwork_installation_art6__icon {
+  flex: 0 0 82px;
+  width: 82px;
+  height: 82px;
+  object-fit: contain;
+
+  @include xs {
+    flex: 0 0 50px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.block_metalwork_installation_art6__descr {
+  flex: 1 1 auto;
+  margin: 0;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 25px;
+
+  strong {
+    color: #0045a3;
+  }
+
+  @include xs {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
